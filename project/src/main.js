@@ -1,0 +1,25 @@
+import { TitleScene } from './scenes/TitleScene.js';
+import { GameScene } from './scenes/GameScene.js';
+import { ResultScene } from './scenes/ResultScene.js';
+
+const config = {
+  type: Phaser.AUTO,
+  width: 480,
+  height: 800,
+  parent: 'game-container',
+  backgroundColor: '#1e1e24',
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 0 },
+      debug: false
+    }
+  },
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH
+  },
+  scene: [TitleScene, GameScene, ResultScene]
+};
+
+const game = new Phaser.Game(config);
