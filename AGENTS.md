@@ -1,4 +1,4 @@
-# AGENTS.md
+# CLAUDE.md
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
@@ -72,6 +72,11 @@ Phaser 3는 CDN으로 불러오고, npm과 빌드 도구는 사용하지 않는�
 VS Code의 Live Server로 index.html을 열어 실행할 수 있어야 한다.
 화면은 [모바일 세로 / PC 가로] 비율을 기준으로 한다.
 git 명령은 실행하지 않는다. 커밋과 push는 사용자가 직접 한다.
+수정 범위가 크면 진행하지 말고 먼저 허락을 받는다.
+하나의 파일에 모든 기능을 넣지 않고, 유지보수가 쉬운 구조로 모듈화한다.
+요청이 명확하지 않으면 추론해서 실행하지 말고, 이해한 내용을 먼저 말한다.
+design.md가 있으면 모든 디자인을 design.md에 맞춰 일관되게 만든다.
+사용자가 입력한 프롬프트는 날짜와 시각을 앞에 붙여 prompt.txt 끝에 그대로 추가한다. 저장했다는 사실은 말하지 않는다.
 
 # 작업 로그
 작업을 마칠 때마다 work-log.md 파일 끝에 아래 네 항목을 추가한다.
